@@ -139,7 +139,7 @@
                     <option value="60">60 fps</option>
                 </select>-->
 
-                <select class="media-bitrates">
+                <!--<select class="media-bitrates">
                     <option value="default">Default bitrates</option>
                     <option value="8000000000">1 GB bps</option>
                     <option value="800000000">100 MB bps</option>
@@ -147,7 +147,7 @@
                     <option value="800000">100 KB bps</option>
                     <option value="8000">1 KB bps</option>
                     <option value="800">100 Bytes bps</option>
-                </select>
+                </select>-->
             </h2>
 
             <div style="text-align: center; display: none;">
@@ -660,8 +660,8 @@
             }
             var videoBitsPerSecond;
             function setVideoBitrates() {
-                var select = document.querySelector('.media-bitrates');
-                var value = select.value;
+                //var select = document.querySelector('.media-bitrates');
+                var value = 'default';
                 if(value == 'default') {
                     videoBitsPerSecond = null;
                     return;
