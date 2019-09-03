@@ -108,9 +108,9 @@
                     <option>WebAssembly</option>
                 </select>-->
 
-                <input type="checkbox" id="chk-timeSlice" style="margin:0;width:auto;" title="Use intervals based recording">
+                <!--<input type="checkbox" id="chk-timeSlice" style="margin:0;width:auto;" title="Use intervals based recording">
                 <label for="chk-timeSlice" style="font-size: 15px;margin:0;width: auto;cursor: pointer;-webkit-user-select:none;user-select:none;" title="Use intervals based recording">Use timeSlice?</label>
-
+                 -->
                 <br>
 
                 <button id="btn-start-recording">Start Recording</button>
@@ -1562,13 +1562,13 @@
         </script>
 
         <script>
-            var chkTimeSlice = document.querySelector('#chk-timeSlice');
+            var chkTimeSlice = false;
             var timeSlice = false;
             if(typeof MediaRecorder === 'undefined') {
                 chkTimeSlice.disabled = true;
             }
-            chkTimeSlice.addEventListener('change', function() {
-                if(chkTimeSlice.checked === true) {
+            
+                if(chkTimeSlice === true) {
                     var _timeSlice = prompt('Please enter timeSlice in milliseconds e.g. 1000 or 2000 or 3000.', 1000);
                     _timeSlice = parseInt(_timeSlice);
                     if(!_timeSlice || _timeSlice == NaN || typeof _timeSlice === 'undefined') {
@@ -1580,7 +1580,7 @@
                 else {
                     timeSlice = false;
                 }
-            }, false);
+           
         </script>
 
         <script>
