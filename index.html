@@ -8,7 +8,7 @@
 <html lang="en">
 
 <head>
-    <title>RecordRTC | WebRTC Audio+Video+Screen Recording</title>
+    
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -85,10 +85,8 @@
 
 <body>
     <article>
-        <header style="text-align: center;">
-            <h1>
-                Audio+Video+Screen Recording using <a href="https://github.com/muaz-khan/RecordRTC">RecordRTC</a>
-            </h1>
+       <!-- <header style="text-align: center;">
+            
 
             <p style="margin:0;margin-bottom:-30px;margin-top: 15px;">
                 <a href="https://github.com/muaz-khan/RecordRTC">Github Source Codes</a> |
@@ -101,18 +99,18 @@
                 <a href="https://www.npmjs.com/package/recordrtc"><img src="https://img.shields.io/npm/dm/recordrtc.svg"></a>
                 <a href="https://travis-ci.org/muaz-khan/RecordRTC"><img src="https://travis-ci.org/muaz-khan/RecordRTC.png?branch=master"></a>
             </p>
-        </header>
+        </header>-->
 
         <div class="github-stargazers" style="margin-top: 25px;"></div>
 
         <section class="experiment recordrtc">
             <h2 class="header" style="margin: 0;">
-                <select class="recording-media">
+               <!-- <select class="recording-media">
                     <option value="record-audio-plus-video">Microphone+Camera</option>
                     <option value="record-audio">Microphone</option>
                     <option value="record-screen">Full Screen</option>
                     <option value="record-audio-plus-screen">Microphone+Screen</option>
-                </select>
+                </select>-->
 
                 <span style="font-size: 15px;">into</span>
 
@@ -259,7 +257,7 @@
             div.appendChild(mediaElement.media);
             
             var recordingPlayer = mediaElement.media;
-            var recordingMedia = document.querySelector('.recording-media');
+            var recordingMedia = 'record-audio-plus-screen';
             var mediaContainerFormat = 'default';
             var mimeType = 'video/webm';
             var fileExtension = 'webm';
