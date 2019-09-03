@@ -455,7 +455,7 @@
                         btnPauseRecording.style.display = '';
                     };
                 }
-                if(recordingMedia.value === 'record-audio-plus-video') {
+                if(recordingMedia === 'record-audio-plus-video') {
                     captureAudioPlusVideo(commonConfig);
                     button.mediaCapturedCallback = function() {
                         if(typeof MediaRecorder === 'undefined') { // opera or chrome etc.
@@ -578,7 +578,7 @@
                 }
                 // note: audio+tab is supported in Chrome 50+
                 // todo: add audio+tab recording
-                if(recordingMedia.value === 'record-audio-plus-screen') {
+                if(recordingMedia === 'record-audio-plus-screen') {
                     captureAudioPlusScreen(commonConfig);
                     button.mediaCapturedCallback = function() {
                         var options = {
@@ -686,7 +686,7 @@
                     mediaConstraints.video.mandatory = {};
                     mediaConstraints.video.optional = [];
                 }
-                var isScreen = recordingMedia.value.toString().toLowerCase().indexOf('screen') != -1;
+                var isScreen = recordingMedia.toLowerCase().indexOf('screen') != -1;
                 if(isScreen) {
                     mediaConstraints.video.mandatory.maxFrameRate = value;
                 }
@@ -736,7 +736,7 @@
                     mediaConstraints.video.mandatory = {};
                     mediaConstraints.video.optional = [];
                 }
-                var isScreen = recordingMedia.value.toString().toLowerCase().indexOf('screen') != -1;
+                var isScreen = recordingMedia.toLowerCase().indexOf('screen') != -1;
                 if(isScreen) {
                     mediaConstraints.video.mandatory.maxWidth = defaultWidth;
                     mediaConstraints.video.mandatory.maxHeight = defaultHeight;
