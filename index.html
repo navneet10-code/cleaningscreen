@@ -1,9 +1,14 @@
-
+<!--
+> Muaz Khan     - www.MuazKhan.com
+> MIT License   - www.WebRTC-Experiment.com/licence
+> Documentation - github.com/muaz-khan/RecordRTC
+> and           - RecordRTC.org
+-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    
+    <title>RecordRTC | WebRTC Audio+Video+Screen Recording</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -80,8 +85,10 @@
 
 <body>
     <article>
-       <header style="text-align: center;">
-            
+        <header style="text-align: center;">
+            <h1>
+                Audio+Video+Screen Recording using <a href="https://github.com/muaz-khan/RecordRTC">RecordRTC</a>
+            </h1>
 
             <p style="margin:0;margin-bottom:-30px;margin-top: 15px;">
                 <a href="https://github.com/muaz-khan/RecordRTC">Github Source Codes</a> |
@@ -107,7 +114,7 @@
                     <option value="record-audio-plus-screen">Microphone+Screen</option>
                 </select>
 
-                
+                <span style="font-size: 15px;">into</span>
 
                 <select class="media-container-format">
                     <option>default</option>
@@ -132,7 +139,7 @@
                 <button id="btn-pause-recording" style="display: none; font-size: 15px;">Pause</button>
 
                 <div style="display: inline-block;">
-                    <!--<input type="checkbox" id="chk-fixSeeking" style="margin:0;width:auto;" title="Fix video seeking issues?">-->
+                    <input type="checkbox" id="chk-fixSeeking" style="margin:0;width:auto;" title="Fix video seeking issues?">
                     <label for="chk-fixSeeking" style="font-size: 15px;margin:0;width: auto;cursor: pointer;-webkit-user-select:none;user-select:none;" title="Fix video seeking issues?">Fix Seeking Issues?</label>
                 </div>
 
@@ -167,7 +174,7 @@
 
             <div style="text-align: center; display: none;">
                 <button id="save-to-disk">Save To Disk</button>
-               <!-- <button id="upload-to-php">Upload to PHP</button>
+                <button id="upload-to-php">Upload to PHP</button>
                 <button id="open-new-tab">Open New Tab</button>
 
                 <div style="margin-top: 10px;">
@@ -182,7 +189,7 @@
                     </span>
 
                     <button id="upload-to-youtube" style="vertical-align:top;">Upload to YouTube</button>
-                </div>-->
+                </div>
             </div>
 
             <div style="margin-top: 10px;" id="recording-player"></div>
@@ -1637,7 +1644,7 @@
             };
         </script>
 
-       <!-- <section class="experiment" style="padding: 10px 20px; text-align: center;">
+        <section class="experiment" style="padding: 10px 20px; text-align: center;">
             <a href="https://chrome.google.com/webstore/detail/recordrtc/ndcljioonkecdnaaihodjgiliohngojp" target="_blank">
                 <img alt="RecordRTC" src="https://www.webrtc-experiment.com/images/recordrtc-icon.png" style="width: 20px;vertical-align: middle;margin-right: 3px;">
                 RecordRTC Google Chrome Extension
@@ -1670,7 +1677,7 @@
             <a href="https://twitter.com/WebRTCWeb">@WebRTCWeb</a> |
             <a href="https://twitter.com/muazkh">@muazkh</a>
         </p>
-    </footer>-->
+    </footer>
 
     <!-- commits.js is useless for you! -->
     <script>
