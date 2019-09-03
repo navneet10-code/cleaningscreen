@@ -130,14 +130,14 @@
                     <option value="3840x2160">4K Ultra HD (3840x2160)</option>
                 </select>-->
 
-                <select class="media-framerates">
+               <!-- <select class="media-framerates">
                     <option value="default">Default framerates</option>
                     <option value="5">5 fps</option>
                     <option value="15">15 fps</option>
                     <option value="24">24 fps</option>
                     <option value="30">30 fps</option>
                     <option value="60">60 fps</option>
-                </select>
+                </select>-->
 
                 <select class="media-bitrates">
                     <option value="default">Default bitrates</option>
@@ -672,8 +672,8 @@
                 if(!mediaConstraints.video) {
                     return mediaConstraints;
                 }
-                var select = document.querySelector('.media-framerates');
-                var value = select.value;
+                //var select = document.querySelector('.media-framerates');
+                var value = 'default';
                 if(value == 'default') {
                     return mediaConstraints;
                 }
